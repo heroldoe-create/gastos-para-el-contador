@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJEMPLO FICTICIO de Andén Norte: RFC, UUID, sellos y nombres inventados. No es un comprobante real. -->
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="4.0" Serie="A" Folio="B-204" Fecha="2026-09-19T17:00:00" FormaPago="03" SubTotal="9000.00" Moneda="MXN" Total="10440.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000" NoCertificado="00000000000000000000" Sello="FICTICIO" Certificado="FICTICIO">
+  <cfdi:Emisor Rfc="IADR780412AN1" Nombre="ROSA IBARRA DUARTE" RegimenFiscal="612"/>
+  <cfdi:Receptor Rfc="TAN150715ST9" Nombre="TRANSPORTES ANDEN NORTE" DomicilioFiscalReceptor="64010" RegimenFiscalReceptor="601" UsoCFDI="G01"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="25172500" ClaveUnidad="H87" Cantidad="1" Descripcion="Venta de 4 llantas" ValorUnitario="9000.00" Importe="9000.00" ObjetoImp="02">
+      <cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="9000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1440.00"/></cfdi:Traslados></cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="1440.00">
+    <cfdi:Traslados><cfdi:Traslado Base="9000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="1440.00"/></cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="00000000-0000-4000-8000-000000000910" FechaTimbrado="2026-09-19T17:00:00" RfcProvCertif="FIC010101AAA" SelloCFD="FICTICIO" NoCertificadoSAT="00000000000000000000" SelloSAT="FICTICIO"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

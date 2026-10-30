@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJEMPLO FICTICIO de Andén Norte: RFC, UUID, sellos y nombres inventados. No es un comprobante real. -->
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="4.0" Serie="A" Folio="88123" Fecha="2026-09-28T19:10:00" FormaPago="04" SubTotal="1850.00" Moneda="MXN" Total="1850.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000" NoCertificado="00000000000000000000" Sello="FICTICIO" Certificado="FICTICIO">
+  <cfdi:Emisor Rfc="SFI020202NP7" Nombre="SUPER FICTICIO DEL NORTE" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="IADR780412AN1" Nombre="ROSA IBARRA DUARTE" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="612" UsoCFDI="S01"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="50131700" ClaveUnidad="H87" Cantidad="1" Descripcion="Leche y lacteos" ValorUnitario="1100.00" Importe="1100.00" ObjetoImp="02">
+      <cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="1100.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/></cfdi:Traslados></cfdi:Impuestos>
+    </cfdi:Concepto>
+    <cfdi:Concepto ClaveProdServ="50181900" ClaveUnidad="H87" Cantidad="1" Descripcion="Pan y galletas" ValorUnitario="750.00" Importe="750.00" ObjetoImp="02">
+      <cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="750.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/></cfdi:Traslados></cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="0.00">
+    <cfdi:Traslados><cfdi:Traslado Base="1850.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.000000" Importe="0.00"/></cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="00000000-0000-4000-8000-000000000908" FechaTimbrado="2026-09-28T19:10:00" RfcProvCertif="FIC010101AAA" SelloCFD="FICTICIO" NoCertificadoSAT="00000000000000000000" SelloSAT="FICTICIO"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

@@ -1,0 +1,14 @@
+fecha,concepto,proveedor,monto,forma de pago,factura
+02/09/2026,Llantas para vender (8),Distribuidora Andén Norte,20880.00,transferencia,sí
+05/09/2026,Renta del local,Jorge Salinas,13920.00,transferencia,sí
+06/09/2026,Llantas de mostrador (2),Distribuidora Andén Norte,3480.00,efectivo,sí
+10/09/2026,Gasolina camioneta,Gasolinera Norte,1500.00,efectivo,sí
+12/09/2026,Comida con cliente,Fonda La Rampa,1160.00,tarjeta de crédito,sí
+15/09/2026,Laptop para el mostrador,Cómputo del Norte,17400.00,tarjeta de crédito,sí
+18/09/2026,Papel y tóner,Papelería Andén Norte,2900.00,transferencia,sí
+20/09/2026,Internet,Telecom,599.00,transferencia,sí
+22/09/2026,Taxi al banco,,240.00,efectivo,no
+25/09/2026,Maniobra de descarga (cargador),Don Beto,800.00,efectivo,no
+27/09/2026,Estacionamiento,,120.00,efectivo,no
+28/09/2026,Súper,Súper Ficticio,1850.00,tarjeta de débito,sí
+29/09/2026,Diseño del logotipo,Lucía Mendoza (diseñadora),3500.00,transferencia,pendiente

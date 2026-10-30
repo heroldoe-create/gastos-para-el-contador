@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJEMPLO FICTICIO de Andén Norte: RFC, UUID, sellos y nombres inventados. No es un comprobante real. -->
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="4.0" Serie="A" Folio="120998" Fecha="2026-09-20T00:05:00" FormaPago="03" SubTotal="516.38" Moneda="MXN" Total="599.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000" NoCertificado="00000000000000000000" Sello="FICTICIO" Certificado="FICTICIO">
+  <cfdi:Emisor Rfc="TFI010101LM6" Nombre="TELECOM FICTICIA" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="IADR780412AN1" Nombre="ROSA IBARRA DUARTE" DomicilioFiscalReceptor="64001" RegimenFiscalReceptor="612" UsoCFDI="G03"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="81112101" ClaveUnidad="E48" Cantidad="1" Descripcion="Servicio de internet, septiembre 2026" ValorUnitario="516.38" Importe="516.38" ObjetoImp="02">
+      <cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="516.38" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="82.62"/></cfdi:Traslados></cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="82.62">
+    <cfdi:Traslados><cfdi:Traslado Base="516.38" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="82.62"/></cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="00000000-0000-4000-8000-000000000907" FechaTimbrado="2026-09-20T00:05:00" RfcProvCertif="FIC010101AAA" SelloCFD="FICTICIO" NoCertificadoSAT="00000000000000000000" SelloSAT="FICTICIO"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

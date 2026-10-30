@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJEMPLO FICTICIO de Andén Norte: RFC, UUID, sellos y nombres inventados. No es un comprobante real. -->
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="4.0" Serie="A" Folio="55821" Fecha="2026-09-10T18:40:00" FormaPago="01" SubTotal="1293.10" Moneda="MXN" Total="1500.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000" NoCertificado="00000000000000000000" Sello="FICTICIO" Certificado="FICTICIO">
+  <cfdi:Emisor Rfc="GFN050505EF3" Nombre="GASOLINERA FICTICIA DEL NORTE" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="IADR780412AN1" Nombre="ROSA IBARRA DUARTE" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="612" UsoCFDI="G03"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="15101514" ClaveUnidad="LTR" Cantidad="1" Descripcion="Gasolina regular" ValorUnitario="1293.10" Importe="1293.10" ObjetoImp="02">
+      <cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="1293.10" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="206.90"/></cfdi:Traslados></cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="206.90">
+    <cfdi:Traslados><cfdi:Traslado Base="1293.10" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="206.90"/></cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="00000000-0000-4000-8000-000000000903" FechaTimbrado="2026-09-10T18:40:00" RfcProvCertif="FIC010101AAA" SelloCFD="FICTICIO" NoCertificadoSAT="00000000000000000000" SelloSAT="FICTICIO"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>

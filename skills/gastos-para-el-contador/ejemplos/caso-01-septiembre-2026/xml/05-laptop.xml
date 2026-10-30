@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- EJEMPLO FICTICIO de Andén Norte: RFC, UUID, sellos y nombres inventados. No es un comprobante real. -->
+<cfdi:Comprobante xmlns:cfdi="http://www.sat.gob.mx/cfd/4" xmlns:tfd="http://www.sat.gob.mx/TimbreFiscalDigital" Version="4.0" Serie="A" Folio="9012" Fecha="2026-09-15T12:00:00" FormaPago="04" SubTotal="15000.00" Moneda="MXN" Total="17400.00" TipoDeComprobante="I" Exportacion="01" MetodoPago="PUE" LugarExpedicion="64000" NoCertificado="00000000000000000000" Sello="FICTICIO" Certificado="FICTICIO">
+  <cfdi:Emisor Rfc="CNO090909JK5" Nombre="COMPUTO DEL NORTE FICTICIO" RegimenFiscal="601"/>
+  <cfdi:Receptor Rfc="IADR780412AN1" Nombre="ROSA IBARRA DUARTE" DomicilioFiscalReceptor="64000" RegimenFiscalReceptor="612" UsoCFDI="I04"/>
+  <cfdi:Conceptos>
+    <cfdi:Concepto ClaveProdServ="43211503" ClaveUnidad="H87" Cantidad="1" Descripcion="Computadora portatil 14 pulgadas" ValorUnitario="15000.00" Importe="15000.00" ObjetoImp="02">
+      <cfdi:Impuestos><cfdi:Traslados><cfdi:Traslado Base="15000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2400.00"/></cfdi:Traslados></cfdi:Impuestos>
+    </cfdi:Concepto>
+  </cfdi:Conceptos>
+  <cfdi:Impuestos TotalImpuestosTrasladados="2400.00">
+    <cfdi:Traslados><cfdi:Traslado Base="15000.00" Impuesto="002" TipoFactor="Tasa" TasaOCuota="0.160000" Importe="2400.00"/></cfdi:Traslados>
+  </cfdi:Impuestos>
+  <cfdi:Complemento>
+    <tfd:TimbreFiscalDigital Version="1.1" UUID="00000000-0000-4000-8000-000000000905" FechaTimbrado="2026-09-15T12:00:00" RfcProvCertif="FIC010101AAA" SelloCFD="FICTICIO" NoCertificadoSAT="00000000000000000000" SelloSAT="FICTICIO"/>
+  </cfdi:Complemento>
+</cfdi:Comprobante>
